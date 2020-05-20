@@ -1,0 +1,29 @@
+.container {
+    @include container(1070px, 0 auto);
+    .cd-collection {
+        @include disp-flex-main-content;
+        margin-top: 170px;
+        .cd {
+            @include cd-set;
+            .poster {
+                width: 165px;
+                height: 165px;
+            }
+            .title {
+                margin-top: 10px;
+                font-size: $font-size-16;
+                color: $white;
+            }
+            .year {
+                margin-top: 3px;
+                font-size: $font-size-13;
+                color: $white;
+            }
+            .author {
+                margin-top: 15px;
+                font-size: $font-size-14;
+                color: $grey;
+            }
+        }
+    }
+}

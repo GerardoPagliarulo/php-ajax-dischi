@@ -1,0 +1,53 @@
+/*************
+    COMMON
+**************/
+// MIXIN
+// Container
+@mixin container($size, $margin) {
+    max-width: $size;
+    margin: $margin;
+}
+
+// Display Flex
+@mixin disp-flex {
+    display: flex;
+}
+
+@mixin disp-flex-horizontal-center {
+    @include disp-flex;
+    align-items: center;
+}
+
+@mixin disp-flex-main-content {
+    @include disp-flex-horizontal-center;
+    flex-wrap: wrap;
+}
+
+@mixin cd-set {
+    flex-basis: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    margin: 0px 21px 21px;
+    padding: 25px;
+    text-align: center;
+    background: $black;
+}
+
+// GENERAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: $dark_grey;
+}
+
+a {
+    list-style: none;
+}
+

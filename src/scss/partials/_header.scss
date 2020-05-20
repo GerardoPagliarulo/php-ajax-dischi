@@ -1,0 +1,19 @@
+/************
+    HEADER
+*************/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background: $black;
+    .container {
+        @include container(1070px, 0 auto);
+        @include disp-flex-horizontal-center;
+        height: 100%;
+        .logo {
+            max-width: 40px;
+            margin-left: 21px;
+        }
+    }
+}
