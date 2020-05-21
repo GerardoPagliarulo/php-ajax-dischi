@@ -57,7 +57,7 @@ $music_info = [
     [
         "poster" => "https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg",
         "title" => "Bad",
-        "author" => "Michael Jacjson",
+        "author" => "Michael Jackson",
         "year" => 1987
     ]
 ];

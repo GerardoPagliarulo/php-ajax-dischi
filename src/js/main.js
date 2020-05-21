@@ -5,11 +5,21 @@ $(document).ready(function () {
     // Init Handlebars
     var source = $('#cd-template').html();
     var template = Handlebars.compile(source);
-    // Settings chiamata Ajax
+    // Settings chiamate Ajax
     var settings = {
         url: "http://localhost:3000/php-ajax-dischi/json-script.php",
         method: 'GET'
     };
+    // Stampa CD a schermo
+    printCd(settings, cdCollection, template);
+    // Ricerca per Artista
+    selectArtist(searchArtist, settings, template, cdCollection);
+});
+/************
+ * FUNZIONI *
+ ************/
+// Funzione: Stampa CD a schermo
+function printCd(settings, cdCollection, template) {
     // Chiamata Ajax CD
     $.ajax(settings)
     .done(function (res) {
@@ -29,12 +39,7 @@ $(document).ready(function () {
     .fail(function (error) {
         console.log('Errore chiamata cd', error.status);
     });
-    // Ricerca per Artista
-    selectArtist(searchArtist, settings, template, cdCollection);
-});
-/************
- * FUNZIONI *
- ************/
+}
 // Funzione: Ricerca per Artista
 function selectArtist(searchArtist, settings, template, cdCollection) {
     searchArtist.keyup(function () {
