@@ -1,3 +1,6 @@
+<?php // Include Data
+    include_once __DIR__ . '/partials/data/music-info.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
