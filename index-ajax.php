@@ -30,7 +30,7 @@
     <!-- TEMPLATE HANDLEBARS -->
     <script id="cd-template" type="text/x-handlebars-template">
         <div class="cd">
-            <img src="{{poster}}" alt="{{title}}" class="poster">
+            <img src="{{poster}}" alt="{{title}}" class="poster" />
             <h3 class="title">{{title}}</h3>
             <span class="author">{{author}}</span>
             <span class="year">{{year}}</span>
