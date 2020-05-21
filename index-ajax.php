@@ -17,6 +17,7 @@
             <a href="#">
                 <img src="assets/img/spotify-logo.png" alt="Spotify Logo" class="logo" />
             </a>
+            <input type="text" placeholder="Nome Artista" class="search-artist">
         </div>
     </header>
     <!-- MAIN CONTENT -->

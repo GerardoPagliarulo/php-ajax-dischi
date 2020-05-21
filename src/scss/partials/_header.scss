@@ -9,7 +9,7 @@ header {
     background: $black;
     .container {
         @include container(1070px, 0 auto);
-        @include disp-flex-horizontal-center;
+        @include disp-flex-site-header;
         height: 100%;
         .logo {
             max-width: 40px;

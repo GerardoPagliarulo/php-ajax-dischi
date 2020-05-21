@@ -18,6 +18,11 @@
     align-items: center;
 }
 
+@mixin disp-flex-site-header {
+    @include disp-flex-horizontal-center;
+    justify-content: space-between;
+}
+
 @mixin disp-flex-main-content {
     @include disp-flex-horizontal-center;
     flex-wrap: wrap;
@@ -45,6 +50,7 @@
 body {
     font-family: sans-serif;
     background-color: $dark_grey;
+    overflow-y: scroll;
 }
 
 a {
